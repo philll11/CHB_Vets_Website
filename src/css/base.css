@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Amaranth);
+
+body { 
+    background-color: #ebebeb; 
+}
+
+.buffer {
+    width: 100%;
+    height: 7px;
+    background-color: rgb(1,33,154);
+}
+
+/* Navigation bar */
+header { 
+    background: #FCFCFC;
+    border-bottom: 1px solid #aaaaaa; 
+    float: left; 
+    width: 100%; 
+    height: 150px; 
+    position: fixed; 
+    z-index: 100; 
+}
+
+/* Navigation bar logo */
+nav a.logo {
+    display: inline-block;
+    height: inherit;
+    left: 300px;
+    position: absolute;
+    margin-top: 0.5em;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000000;
+    font-family: Sans-serif;
+    font-size: 70px;
+    color: rgb(1,33,154);
+}
+a.logo img {
+    width: 120px;
+}
+a.phone-number  {
+    display: block;
+    position: absolute;
+    right: 300px;
+    top: 2.3em;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;    
+}
+.mobile-display {
+    display: none;
+}
+
+
+
+/* Navigation bar tabs */
+nav ul {
+    position: absolute;
+    float: right;
+    right: 300px;
+    margin-top: 5.5em;
+}
+nav li {    
+    display: inline;
+    float: left;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+nav li a {
+    margin-top: 25px; 
+    color: black; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: 'Amaranth', sans-serif; 
+    font-size: 15px;
+    letter-spacing: 2;
+}
+nav li a.active, nav li a:hover { 
+    color: #77839F;
+}
+
+/* Half page sizing */
+@media (max-width: 1370px) {
+    nav a.logo {
+        left: 20px;
+    }
+    nav ul {
+        right: 20px;
+    }
+    nav li {
+        margin-left: 20px;
+    }
+    a.phone-number  {
+        right: 20px;
+    }
+}
+
+/* Mobile styling */
+@media (max-width: 580px) {
+    nav .desktop-display { 
+        display: none;
+    }
+    header {
+        height: 70px;
+    }
+    nav a.logo {
+        margin-top: 8px;
+        font-size: 30px;
+        color: rgb(1,33,154);
+    }    
+    a.logo img {
+        width: 60px;
+        margin-right: 45px;
+    }    
+    a.phone-number {        
+        display: inline-block;
+        position: relative;
+        right: 0px;
+        top: 15px;  
+        width: 65%;
+        margin: 0px 17.5%;
+        font-size: 22px;
+        color: black;
+    }
+    .mobile-display {
+        position: relative;
+        display: inline-block;
+        float: right;
+        margin-top: 19px;
+        margin-right: 20px;
+    }
+    .drop-btn {
+        float: right;        
+        border: none;
+        background: #C7C7C7;
+        font-size: 1.6em;
+        border-radius: 5px;        
+    }
+    .dropdown-content {
+        display: none;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 100;
+    }
+    .dropdown-content a {
+        display: block;        
+        color: black;
+        margin: 0;
+        width: 100px;
+        padding: 15px 16px; 
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Amaranth', sans-serif; 
+    }
+    .mobile-display:hover .dropdown-content {display: block;}
+    .mobile-display:hover .drop-btn {background-color: #f1f1f1;}    
+    .dropdown-content a:hover {background-color: #ddd;}
+        
+}
+
+
+
+/*
+section { 
+    float: left; 
+    height: 1000px; 
+    width: 100%; 
+}
+section p { 
+    font-family: 'Amaranth', sans-serif; 
+    font-size: 30px; color: #969696; 
+    text-align: center; 
+    position: relative; 
+    margin-top: 250px; 
+}
+section p{ 
+    top: 100%;
+} 
+*/
+
+
+
+
+
+
