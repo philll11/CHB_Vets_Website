@@ -1,0 +1,61 @@
+
+/* Google Map Styling */
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {    
+    display: inline-block;
+    position: relative;
+    margin-top: 151px;
+    height: 60%;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* location Information */
+#location-info {
+    font-family: "Playfair Display";
+    text-align: center;
+    letter-spacing: 2px;
+    height: 350px;
+    padding-top: 30px;
+}
+#location-info h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+#location-info h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+#location-info h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+#location-info pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+}

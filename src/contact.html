@@ -4,10 +4,10 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     
-    <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" type="text/css" /href="http://meyerweb.com/eric/tools/css/reset/reset.css">
     
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/home_content.css">
+    <link rel="stylesheet" href="css/contact_content.css">
     
 </head>
 <body>
@@ -40,13 +40,19 @@
                         
         </nav>
     </header>
-    <section class="first-banner">
-        <img src="images/background_image2.png">
-    </section>
-    <section class="second-banner">
-        <h1></h1>
-        <p></p>
-    </section>    
+    
+    
+    <!--Google map api  -->
+    <div id="map"></div>
+    
+    <div id="location-info">            
+        <h1>Find Us At</h1>
+        <p>7 Northumberland St, Waipukurau</p>
+        <h2>Contact Us</h2>
+        <p>Phone Number: (06) 858 6555<br>Email: blank@gmail.com</p>        
+        <h3>Store Hours:</h3>
+        <pre>Mon | 9am - 5pm<br>Tue | 9am - 5pm<br>Wed | 9am - 5pm<br>Thu | 9am - 5pm<br>Fri | 9am - 5pm</pre>    
+    </div>
 
     
     
@@ -61,6 +67,8 @@
             
         </div>
     </footer>
-    
+    <script src="js/google_map_script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSV1Keex63VA8yPuR-avW6Ch06XVcz5Sk&callback=initMap"
+    async defer></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.first-banner {
+.page-continer {
     display: inline-block;
     position: relative;
     margin: 151px 15% 0 15%;
@@ -51,4 +51,38 @@ hr {
 .text-align .position,.text-align .education {
     font-size: 20px;
     color: #808080;
+}
+.lower-text {
+    display: none;
+}
+
+
+
+/* Half page sizing */
+@media (max-width: 970px) {
+    .container {
+        margin: 0 25%;
+        width: 50%
+    }
+    .container img {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .text-align {
+        text-align: center;        
+    }    
+    .text-align .title {
+        font-size: 25px;
+        color: #066b98;
+    }
+    .text-align .position,.text-align .education {
+        font-size: 15px;
+        color: #808080;
+    }
+    .lower-text {
+        display: inline;
+    }
+    .upper-text {
+        display: none;
+    }    
 }
