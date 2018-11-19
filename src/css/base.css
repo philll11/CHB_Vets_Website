@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Amaranth);
 
 body { 
-    background-color: #ebebeb; 
+    background-color: #f6f6f6;
 }
 
 .buffer {
@@ -10,15 +10,16 @@ body {
     background-color: rgb(1,33,154);
 }
 
+
 /* Navigation bar */
-header { 
+header {
     background: #FCFCFC;
-    border-bottom: 1px solid #aaaaaa; 
+    border-bottom: 1px solid #0893eb; 
     float: left; 
     width: 100%; 
     height: 150px; 
     position: fixed; 
-    z-index: 100; 
+    z-index: 10;
 }
 
 /* Navigation bar logo */
@@ -37,15 +38,6 @@ nav a.logo {
 a.logo img {
     width: 120px;
 }
-a.phone-number  {
-    display: block;
-    position: absolute;
-    right: 300px;
-    top: 2.3em;
-    text-decoration: none;
-    font-size: 30px;
-    color: black;    
-}
 .mobile-display {
     display: none;
 }
@@ -63,20 +55,40 @@ nav li {
     display: inline;
     float: left;
     margin-top: 25px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 nav li a {
-    margin-top: 25px; 
-    color: black; 
+    padding: 5px 10px;
+    color: #6f6f6f; 
     text-decoration: none; 
     text-transform: uppercase; 
     font-family: 'Amaranth', sans-serif; 
     font-size: 15px;
     letter-spacing: 2;
+    transition: 0.3s;
 }
 nav li a.active, nav li a:hover { 
-    color: #77839F;
+    color: black;
+    background-color: #BDC9E5;    
 }
+
+.nav-contact {
+    font-family: 'Amaranth', sans-serif; 
+    display: block;
+    position: absolute;
+    right: 310px;
+    top: 75px;
+    color: #6f6f6f;
+}
+.nav-contact a {    
+    color: #0893eb;
+}
+
+.nav-contact a, .nav-contact span  {
+    text-decoration: none;    
+    font-size: 25px;
+}
+
 
 /* Half page sizing */
 @media (max-width: 1370px) {
@@ -86,11 +98,30 @@ nav li a.active, nav li a:hover {
     nav ul {
         right: 20px;
     }
-    nav li {
-        margin-left: 20px;
+    .nav-contact  {
+        right: 30px;
     }
-    a.phone-number  {
+}
+
+@media (max-width: 970px) {
+    header {
+        height: 100px;
+    }
+    nav a.logo {
+        font-size: 50px;
+        left: 20px;
+        margin-top: 20px;
+    }    
+    a.logo img {
+        width: 80px;
+    }
+    nav ul {
         right: 20px;
+        margin-top: 45px;
+    }
+    .nav-contact  {
+        top: 40px;
+        right: 30px;
     }
 }
 
@@ -99,27 +130,22 @@ nav li a.active, nav li a:hover {
     nav .desktop-display { 
         display: none;
     }
+    .nav-contact {
+        display: none;
+    }
     header {
         height: 70px;
     }
     nav a.logo {
         margin-top: 8px;
         font-size: 30px;
-        color: rgb(1,33,154);
-    }    
+    }
     a.logo img {
         width: 60px;
-        margin-right: 45px;
-    }    
-    a.phone-number {        
-        display: inline-block;
-        position: relative;
-        right: 0px;
-        top: 15px;  
-        width: 65%;
-        margin: 0px 17.5%;
-        font-size: 22px;
-        color: black;
+    }
+    .nav-contact a, .nav-contact span  {
+        text-decoration: none;    
+        font-size: 20px;
     }
     .mobile-display {
         position: relative;
@@ -153,29 +179,21 @@ nav li a.active, nav li a:hover {
     }
     .mobile-display:hover .dropdown-content {display: block;}
     .mobile-display:hover .drop-btn {background-color: #f1f1f1;}    
-    .dropdown-content a:hover {background-color: #ddd;}
-        
+    .dropdown-content a:hover {background-color: #ddd;}        
 }
 
 
 
-/*
-section { 
-    float: left; 
-    height: 1000px; 
-    width: 100%; 
+
+/* Footer */
+.footer-distributed {
+    background: linear-gradient(to bottom, #777 0%, #363538 100%);
+/*    background-color: #4e4c4f;*/
+    width: 100%;
+    height: 240px;
+    box-shadow: 0 -4px 4px -2px gray;
 }
-section p { 
-    font-family: 'Amaranth', sans-serif; 
-    font-size: 30px; color: #969696; 
-    text-align: center; 
-    position: relative; 
-    margin-top: 250px; 
-}
-section p{ 
-    top: 100%;
-} 
-*/
+
 
 
 
