@@ -19,7 +19,7 @@
             
             <ul class="desktop-display">                
                 <li><a href="home.html">Home</a></li>
-                <li><a href="news_letter.html">News Letter</a></li>
+                <li><a href="newsletter.html">NewsLetters</a></li>
                 <li><a href="about_us.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>           
             </ul>
@@ -28,7 +28,7 @@
                 <button class="drop-btn">&#9776;</button>
                 <div class="dropdown-content">
                     <a href="home.html">Home</a>
-                    <a href="news_letter.html">News Letter</a>
+                    <a href="newsletter.html">NewsLetters</a>
                     <a href="about_us.html">About</a>
                     <a href="contact.html">Contact</a>
                 </div>
@@ -36,18 +36,42 @@
             
             <div class="nav-contact">
                 <span>Contact Us - </span>
-                <a href="tel:+64-6-878-1510">(06) 858 6555</a>
+                <a href="tel:+64-6-858-6555">(06) 858 6555</a>
             </div>
                         
         </nav>
     </header>
-    <section class="first-banner">
-        <img src="images/background_image2.png">
+    
+    
+    <!-- Carousel container -->
+    <section>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="images/home_images/20151005_113452.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/home_images/20151005_113452.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/home_images/20151005_113452.jpg">
+            </div>
+        </div>
     </section>
+    
+    
     <section class="second-banner">
-        <h1></h1>
-        <p></p>
-    </section>    
+        <h1>Providing quality care for your small and large animals</h1>
+        <p>For over 20 years, we have been providing the Central Hawkes Bay region with expert veterinarian advice delivered in a personal and caring way. With animal wellfare as our top priority, you can be reassured knowing that CHB Vets is the best place for your animals in their time of need.<br><br>We operate on a 24-hour, on-call service spanning 365 days a year so that we can be available to you for any emergency.<br><br><strong>For emergency after-hours contact our on-duty vet on:</strong> <a style="text-decoration: none;" href="tel:+64-27-249-3731">(027) 249 3731</a> </p>
+        <h1>Our Location</h1>
+        <p>5 Northumberland St, Waipukurau <a href="https://goo.gl/maps/4BeR6Rh7kyM2" target="_newtab" style="text-decoration: none;">(Click here to open in Google maps)</a></p>
+    </section> 
+    <section>
+        <!--Google map api  -->
+        <div id="map"></div>
+    </section>
+      
 
     
     
@@ -62,6 +86,9 @@
             
         </div>
     </footer>
-    
+    <script src="js/carousel_script.js"></script>
+    <script src="js/google_map_script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSV1Keex63VA8yPuR-avW6Ch06XVcz5Sk&callback=initMap"
+    async defer></script>
 </body>
 </html>

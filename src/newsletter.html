@@ -6,10 +6,9 @@
     <meta charset="utf-8">
     
     <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/contact_content.css">
+    <link rel="stylesheet" href="css/newsletter_content.css">
     
 </head>
 <body>
@@ -38,45 +37,41 @@
             <div class="nav-contact">
                 <span>Contact Us - </span>
                 <a href="tel:+64-6-858-6555">(06) 858 6555</a>
-            </div>
-                        
+            </div>                        
         </nav>
     </header>
     
     
-    <!--Google map api  -->
-    <div id="map"></div>
-    
-    <div id="location-info">            
-        <h1>Find Us At</h1>
-        <p>5 Northumberland St, Waipukurau</p>
-        <h2>Contact Us</h2>
-        <p>Phone Number: (06) 858 6555<br>Email: reception@chbvets.nz</p>        
-        <h2>Business Hours:</h2>
-        <pre>Mon | 8am - 5:30pm<br>Tue | 8am - 5:30pm<br>Wed | 8am - 5:30pm<br>Thu | 8am - 5:30pm<br>Fri | 8am - 5:30pm<br>Sat | 9am - 12pm  </pre>    
-    </div>
+    <section>
+        <div class="newsletter-links">
+            <button onclick="newsletter(0)">November</button>
+            <button onclick="newsletter(1)">October</button>
+            <button onclick="newsletter(2)">September</button>
+        </div>
+        <div class="newsletters">
+            <embed src="images/November%202018.pdf" type="application/pdf">
+        </div>
+        <div class="newsletters">
+            <embed src="images/November%202018.pdf" type="application/pdf">
+        </div>
+        <div class="newsletters">
+            <embed src="images/November%202018.pdf" type="application/pdf">
+        </div>
+    </section>
 
     
     
     <footer class="footer-distributed">
         <div class="footer-left">
-            <div>CHB Vets Ltd</div>
-            <div>Dstablished 1986</div>
-            <a href="https://www.facebook.com/pages/category/Local-Business/CHB-Vets-Ltd-130416423692767/" class="fa fa-facebook"></a>
-            <a href="https://www.linkedin.com/in/karen-phillips-89875748/" class="fa fa-linkedin"></a>
+            
         </div>
         <div class="footer-center">
-            <div>(06) 858 6555</div>
-            <div>karenvet@xtra.co.nz</div>
-            <div>5 Northumberland St, Waipukurau</div>
+            					
         </div>
         <div class="footer-right">
-            <input type="text" placeholder="Newsletter">
-            <button type="button">Subscribe</button>
+            
         </div>
     </footer>
-    <script src="js/google_map_script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSV1Keex63VA8yPuR-avW6Ch06XVcz5Sk&callback=initMap"
-    async defer></script>
+    <script src="js/newsletter_script.js"></script>
 </body>
 </html>

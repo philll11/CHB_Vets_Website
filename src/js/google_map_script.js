@@ -17,7 +17,7 @@ function initMap() {
     });
     
     /* Ties info box to marker and activates when marker is clicked */
-    var contentString = '<p><b>CHB Vets Ltd</b></p>' + '<p>7 Northumberland St<br>Waipukurau<br>4200<br>New Zealand</p>';
+    var contentString = '<p><b>CHB Vets Ltd</b></p>' + '<p>5 Northumberland St<br>Waipukurau<br>4200<br>New Zealand</p>';
     var infowindow = new google.maps.InfoWindow({
         content: contentString
     });
