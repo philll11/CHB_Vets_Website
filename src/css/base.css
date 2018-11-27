@@ -92,8 +92,166 @@ nav li a.active, nav li a:hover {
 }
 
 
+
+
+/* Footer */
+.footer-distributed {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #292c2f;
+    width: 100%;
+    box-shadow: 0 -4px 4px -2px gray;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+/* Footer sectioning */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+.footer-distributed .footer-center{
+	width: 27%;
+}
+.footer-distributed .footer-right{
+	width: 24%;
+}
+.footer-left-container, .footer-center-container, .footer-right-container {
+	padding-left: 55px;    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+/* Footer Left Content */
+.footer-logo {
+    margin: 5px;
+    color: #EA5F08;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer-tagline {
+    margin: 5px;
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;    
+}
+.footer-links {
+    margin: 5px;
+    margin-top: 10px;
+}
+/* Add a hover effect if you want */
+a.fa:hover {
+    opacity: 0.7;
+}
+a.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+a.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+
+
+/* Footer Center Content */
+i.fa {
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-distributed .footer-center p {
+    font-weight: bold;
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;    
+}
+.footer-distributed .footer-center p.footer-address {
+    font-weight: normal;
+}
+strong {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.footer-distributed .footer-center p.footer-email {    
+	color: #5383d3;
+}
+/* Style all font awesome icons */
+a.fa {
+    padding: 6px 8px;
+    font-size: 25px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+/* Footer Right Container */
+.footer-right-container {    
+	display: inline-block;
+}
+.footer-right-container p {    
+	display: inline-block;
+	vertical-align: top;
+    font-weight: bold;
+	margin: 10px;
+	color: #ffffff;
+}
+.footer-distributed input {
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+    margin: 10px;
+}
+.footer-distributed button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+    margin: 10px;
+	font-weight: bold;
+	float: right;
+}
+
+
+
+
+
 /* Half page sizing */
 @media (max-width: 1370px) {
+    /* Logo */
     nav a.logo {
         left: 20px;
     }
@@ -103,9 +261,15 @@ nav li a.active, nav li a:hover {
     .nav-contact  {
         right: 30px;
     }
+    /* Footer */
+    .footer-distributed .footer-left {
+        width: 30%;
+    }
+    .footer-distributed input {
+		width: 300px;
+	}
 }
-
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     header {
         height: 100px;
     }
@@ -128,8 +292,27 @@ nav li a.active, nav li a:hover {
         top: 40px;
         right: 30px;
     }
-}
+    /* Footer */
+    .footer-distributed{
+        font-size: 14px;
+	}
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+    .footer-left-container, .footer-center-container, .footer-right-container {
+        padding-left: 0;    
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
 /* Mobile styling */
 @media (max-width: 580px) {
     nav .desktop-display { 
@@ -186,49 +369,3 @@ nav li a.active, nav li a:hover {
     .mobile-display:hover .drop-btn {background-color: #f1f1f1;}    
     .dropdown-content a:hover {background-color: #ddd;}        
 }
-
-
-
-
-/* Footer */
-.footer-distributed {
-    background: linear-gradient(to bottom, #777 0%, #363538 100%);
-    width: 100%;
-    height: 240px;
-    box-shadow: 0 -4px 4px -2px gray;
-}
-.footer-left, .footer-center, .footer-right {
-    display: inline-block;
-    width: 32.5%;
-    padding: 10px;
-}
-
-/* Style all font awesome icons */
-.fa {
-    padding: 6px 8px;
-    font-size: 25px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-
-
-
-
-
-

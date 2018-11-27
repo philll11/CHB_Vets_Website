@@ -19,39 +19,36 @@
     width: 100%;
 }
 
-
-
-.second-banner {
+section {
     display: inline-block;
     position: relative;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 10px 40px;;
-    width: 70%;
     background-color: white;
-    height: 300px;
+    margin-left: 10%;
+    width: 80%;
 }
-
-.second-banner h1 {
+.second-container {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.second-container h1 {
     text-transform: capitalize;
     display: block;
-    margin-top: 0.83em;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
     color: rgb(6, 107, 152);
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;    
     font-weight: 100;
     letter-spacing: 0.14px;
-    line-height: 1.4em;
+    line-height: 1.4em;    
 }
-.second-banner p {    
+.first-heading {
+    padding-top: 10px;
+}
+.second-header {
+    padding-top: 20px;
+}
+.second-container p {    
     display: block;
-    margin-top: 0;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
     color: rgb(128, 128, 128);
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;    
@@ -59,9 +56,14 @@
     letter-spacing: 0.14px;
     line-height: 24px;
 }
-
 strong {
     font-weight: bold;
+}
+.second-paragraph {
+    padding-bottom: 5px;
+}
+.map-buffer {
+    padding-bottom: 80px;
 }
 
 /* Google Map Styling */
@@ -75,10 +77,15 @@ strong {
     width: 100%;
     z-index: 1;
 }
-
 /* Optional: Makes the sample page fill the window. */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+.bottom-buffer {
+    background-color: white;
+    margin-left: 7.5%;
+    width: 80%;
+    padding-bottom: 80px;
 }

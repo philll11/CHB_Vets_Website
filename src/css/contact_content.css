@@ -27,6 +27,7 @@ html, body {
     letter-spacing: 2px;
     height: 400px;
     padding-top: 30px;
+    padding-bottom: 50px;
 }
 #location-info h1 {    
     text-transform: capitalize;

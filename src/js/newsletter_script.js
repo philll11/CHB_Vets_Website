@@ -1,5 +1,5 @@
 function newsletter(x) {
-    console.log(x);
+    document.getElementById("newsletter-buffer").style.display = "none";
     var newsletters = document.getElementsByClassName("newsletters");  
     if(x == 0) {
         newsletters[0].style.display = "block";

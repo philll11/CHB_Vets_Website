@@ -1,7 +1,8 @@
 .page-continer {
     display: inline-block;
     position: relative;
-    margin: 121px 15% 0 15%;
+    margin: 141px 15% 0 15%;
+    padding-bottom: 50px;
     width: 70%;
     background-color: white;
     z-index: -1;
