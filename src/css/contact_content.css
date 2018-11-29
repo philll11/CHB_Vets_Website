@@ -25,7 +25,6 @@ html, body {
     width: 70%;
     background-color: white;
     letter-spacing: 2px;
-    height: 400px;
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -47,7 +46,7 @@ html, body {
     display: block;
     font-size: 1.5em;
     margin-top: 0.83em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     color: rgb(6, 107, 152);
@@ -70,12 +69,27 @@ html, body {
     letter-spacing: 0.14px;
     line-height: 24px;    
 }
-#location-info pre {
-    font-family: "Playfair Display";
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    margin: 1em 0;
+.office_hours {
+    margin: auto;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+th {
+    border-bottom: 2px solid rgb(229, 229, 229);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(128, 128, 128);
+}
+td {    
+    border-bottom: 1px solid rgb(229, 229, 229);
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #3f3f3f;
+}
+td span {
+    padding-right: 50px;
 }
 
 

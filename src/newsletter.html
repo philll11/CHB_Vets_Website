@@ -44,23 +44,34 @@
     
     
     <section>
-        <div class="newsletter-links">
-            <button onclick="newsletter(0)">November</button>
-            <button onclick="newsletter(1)">October</button>
-            <button onclick="newsletter(2)">September</button>
-        </div>
-        <div class="newsletters">
-            <embed src="images/November%202018.pdf" type="application/pdf">
-        </div>
-        <div class="newsletters">
-            <embed src="images/November%202018.pdf" type="application/pdf">
-        </div>
-        <div class="newsletters">
-            <embed src="images/November%202018.pdf" type="application/pdf">
+        <div class="newsletter-container">
+            <div class="newsletter-heading">
+                <h1>Monthly Newsletters</h1>
+                <p>Click the buttons below to display that months newsletter</p>
+            </div>
+            <div class="newsletter-links">
+                <div class="newsletter-button">
+                    <button onclick="newsletter(0)">November</button>
+                </div>
+                <div class="newsletter-button">
+                    <button onclick="newsletter(1)">October</button>
+                </div>
+                <div class="newsletter-button">
+                    <button onclick="newsletter(2)">September</button>
+                </div>
+            </div>
+            <div class="newsletters">
+                <embed src="images/November%202018.pdf" type="application/pdf">
+            </div>
+            <div class="newsletters">
+                <embed src="images/November%202018.pdf" type="application/pdf">
+            </div>
+            <div class="newsletters">
+                <embed src="images/November%202018.pdf" type="application/pdf">
+            </div>
+            <div id="newsletter-buffer"><p>Display Newsletter</p></div>
         </div>
     </section>
-    
-    <div id="newsletter-buffer"></div>
     
     
     <footer class="footer-distributed">
@@ -86,7 +97,7 @@
                 </div>
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p class="footer-email">karenvet@xtra.co.nz</p>
+                    <p class="footer-email">reception@chbvets.nz</p>
                 </div>
             </div>
         </div>
