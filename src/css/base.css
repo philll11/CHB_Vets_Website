@@ -250,7 +250,7 @@ a.fa {
 
 
 /* Half page sizing */
-@media (max-width: 1370px) {
+@media (max-width: 1440px) {
     /* Logo */
     nav a.logo {
         left: 20px;
@@ -314,7 +314,7 @@ a.fa {
 	}
 }
 /* Mobile styling */
-@media (max-width: 580px) {
+@media (max-width: 680px) {
     nav .desktop-display { 
         display: none;
     }
