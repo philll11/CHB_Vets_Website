@@ -3,7 +3,7 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    margin-top: 121px;
+    margin-top: 101px;
 }
 
 /* Hide the images by default */
@@ -26,12 +26,7 @@ section {
     margin-left: 10%;
     width: 80%;
 }
-.second-container {
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.second-container h1 {
+.section-container h1 {
     text-transform: capitalize;
     display: block;
     color: rgb(6, 107, 152);
@@ -41,13 +36,7 @@ section {
     letter-spacing: 0.14px;
     line-height: 1.4em;    
 }
-.first-heading {
-    padding-top: 10px;
-}
-.second-header {
-    padding-top: 50px;
-}
-.second-container p {    
+.section-container p {    
     display: block;
     color: rgb(128, 128, 128);
     font-family: 'Open Sans', sans-serif;
@@ -56,8 +45,51 @@ section {
     letter-spacing: 0.14px;
     line-height: 24px;
 }
+.first-section-container {
+    height: 300px;
+    width: 80%;
+    margin: 20px auto;
+}
+.paragraph-container {
+    width: 64%;
+    float: left;
+    padding-right: 40px;
+}
+.emergency-contact {
+    width: 28%;
+    float: left;
+    margin-top: 10px;
+/*    border: 1px solid black;*/
+    border-radius: 3px;
+    background-color: #0893eb;    
+    padding: 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.55);    
+    display: block;
+}
+.emergency-contact p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16x;
+    font-weight: 200;
+    letter-spacing: 0.14px;
+    line-height: 24px;    
+}
+.emergency-contact h1 {
+    color: white;
+    font-size: 25px;
+}
+.emergancy-number {
+    text-decoration: none;
+    color: white;    
+    font-size: 17px;
+    font-weight: 600;   
+}
 strong {
     font-weight: bold;
+}
+.second-section-container {
+    width: 80%;
+    margin: 20px auto;    
 }
 .second-paragraph {
     padding-bottom: 5px;
@@ -65,6 +97,8 @@ strong {
 .map-buffer {
     padding-bottom: 80px;
 }
+
+
 
 /* Google Map Styling */
 /* Always set the map height explicitly to define the size of the div
@@ -88,4 +122,22 @@ html, body {
     margin-left: 7.5%;
     width: 80%;
     padding-bottom: 80px;
+}
+
+
+@media (max-width: 1590px) {
+    .first-section-container {
+        height: auto;
+    }
+    .paragraph-container {
+        width: auto;
+        float: none;
+        padding-right: 0px;
+    }
+    .emergency-contact{
+        width: auto;
+        float: none;
+        margin-top: 10px;  
+        margin-bottom: 30px;
+    }
 }

@@ -100,7 +100,7 @@ td span {
         margin-top: 100px;
     }
 }
-@media (max-width: 580px) {
+@media (max-width: 680px) {
     #map {
         margin-top: 70px;
     }

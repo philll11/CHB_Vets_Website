@@ -79,6 +79,9 @@
 
 
 @media (max-width: 680px) {
+    .newsletter-container {  
+        margin-top: 71px;
+    }
     .newsletter-button {
         display: block;
         width: 100%;
@@ -87,5 +90,8 @@
     .newsletter-button button {
         width: 120px;
         padding: 5px 15px;
+    }
+    .newsletters {
+        height: 440px;
     }
 }

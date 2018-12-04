@@ -202,6 +202,10 @@ a.fa {
     text-decoration: none;
     border-radius: 5px;
 }
+.footer-center a {
+    text-decoration: none;
+    color: white;
+}
 
 
 
