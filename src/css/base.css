@@ -238,7 +238,7 @@ a.fa {
 	padding: 18px;
     margin: 10px;
 }
-.footer-distributed button{
+.footer-distributed button {
 	border-radius: 3px;
 	background-color:  #33383b;
 	color: #ffffff;
@@ -248,8 +248,10 @@ a.fa {
 	font-weight: bold;
 	float: right;
 }
-
-
+.footer-distributed button:hover {
+	background-color: #1f2022;    
+    cursor: pointer;
+}
 
 
 
@@ -275,7 +277,7 @@ a.fa {
 }
 @media (max-width: 1100px) {
     header {
-        height: 100px;
+        height: 105px;
     }
     nav a.logo {
         font-size: 50px;
@@ -290,7 +292,7 @@ a.fa {
         margin-top: 45px;
     }
     nav li a {
-        padding: 0;
+        padding: 2.5px 5px;
     }
     .nav-contact  {
         top: 40px;

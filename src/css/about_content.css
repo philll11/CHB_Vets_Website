@@ -63,7 +63,7 @@ hr {
 }
 .text-align .bio {
     color: #3f3f3f;
-    font-size: 17px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
 }
@@ -74,21 +74,32 @@ hr {
 
 
 /* Half page sizing */
-@media (max-width: 970px) {
-    .container {
-        margin: 0 25%;
-        width: 50%
+@media (max-width: 1050px) {
+    .page-continer {
+        margin-top: 71px;
+    }
+    .profile-left > .container {    
+        display: block;
+        width: auto;
+    }
+    .profile-right > .container {    
+        display: block;
+        width: auto;
     }
     .container img {
         width: 100%;
         padding: 10px 0;
     }
     .text-align {
-        text-align: center;        
+        text-align: center;
     }    
     .text-align .title {
         font-size: 25px;
         color: #066b98;
+    }
+    .text-align .bio {
+        text-align: center;
+        font-size: 13px;
     }
     .text-align .position,.text-align .education {
         font-size: 15px;

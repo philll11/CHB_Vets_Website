@@ -79,7 +79,7 @@ section {
     font-size: 25px;
 }
 .emergancy-number {
-    text-decoration: none;
+    text-decoration: underline;
     color: white;    
     font-size: 17px;
     font-weight: 600;   
@@ -139,5 +139,10 @@ html, body {
         float: none;
         margin-top: 10px;  
         margin-bottom: 30px;
+    }
+}
+@media (max-width: 680px) {
+    .slideshow-container {
+        margin-top: 71px;
     }
 }
