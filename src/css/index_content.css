@@ -34,7 +34,8 @@ section {
     font-size: 30px;    
     font-weight: 100;
     letter-spacing: 0.14px;
-    line-height: 1.4em;    
+    line-height: 1.4em;  
+    margin-bottom: 20px;
 }
 .section-container p {    
     display: block;
