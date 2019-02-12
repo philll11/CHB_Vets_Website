@@ -268,13 +268,6 @@ a.fa {
     .nav-contact  {
         right: 30px;
     }
-    /* Footer */
-    .footer-distributed .footer-left {
-        width: 30%;
-    }
-    .footer-distributed input {
-		width: 300px;
-	}
 }
 @media (max-width: 1100px) {
     header {
@@ -304,21 +297,34 @@ a.fa {
         font-size: 14px;
 	}
 	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
 	.footer-distributed .footer-right{
-		display: block;
+		display: block;        
 		width: 100%;
 		text-align: center;
+        margin: 0;
 	}
-    .footer-left-container, .footer-center-container, .footer-right-container {
-        padding-left: 0;    
-        padding-top: 20px;
-        padding-bottom: 20px;
+    .footer-distributed .footer-left {
+        padding-top: 50px;
     }
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
+/*
+    .footer-distributed .footer-left,
+.footer-distributed .footer-right{
+	display: inline-block;
+    vertical-align: middle;
+    height: 180px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+ Footer sectioning 
+.footer-distributed .footer-left{
+    text-align: center;
+    width: 50%;
+}
+.footer-distributed .footer-right{
+    text-align: center;
+	width: 49%;
+}
+*/
 }
 /* Mobile styling */
 @media (max-width: 680px) {
