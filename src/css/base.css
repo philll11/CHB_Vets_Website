@@ -100,28 +100,24 @@ nav li a.active, nav li a:hover {
     font-size: 16px;
     background-color: #292c2f;
     width: 100%;
-    box-shadow: 0 -4px 4px -2px gray;
+    box-shadow: 0 -4px 4px -2px gray; 
 }
 .footer-distributed .footer-left,
-.footer-distributed .footer-center,
 .footer-distributed .footer-right{
 	display: inline-block;
-	vertical-align: top;
+    vertical-align: middle;
+    height: 180px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 /* Footer sectioning */
 .footer-distributed .footer-left{
-	width: 40%;
-}
-.footer-distributed .footer-center{
-	width: 27%;
+    text-align: center;
+    width: 50%;
 }
 .footer-distributed .footer-right{
-	width: 24%;
-}
-.footer-left-container, .footer-center-container, .footer-right-container {
-	padding-left: 55px;    
-    padding-top: 50px;
-    padding-bottom: 50px;
+    text-align: center;
+	width: 49%;
 }
 
 
@@ -176,13 +172,18 @@ i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
 }
-.footer-distributed .footer-center p {
+.footer-distributed p {
+    font-weight: bold;
+	display: inline-block;
+}
+.footer-distributed p a {
     font-weight: bold;
 	display: inline-block;
 	color: #ffffff;
-	vertical-align: middle;    
+	vertical-align: middle;
+    text-decoration: none;
 }
-.footer-distributed .footer-center p.footer-address {
+.footer-distributed p.footer-address {
     font-weight: normal;
 }
 strong {
@@ -190,7 +191,7 @@ strong {
     font-weight: bold;
     margin-top: 5px;
 }
-.footer-distributed .footer-center p.footer-email {    
+.footer-distributed p.footer-email {   
 	color: #5383d3;
 }
 /* Style all font awesome icons */
