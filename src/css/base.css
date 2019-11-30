@@ -17,7 +17,7 @@ header {
     border-bottom: 1px solid #0893eb; 
     float: left; 
     width: 100%; 
-    height: 140px; 
+    height: 100px; 
     position: fixed; 
     z-index: 10;
 }
@@ -36,7 +36,7 @@ nav a.logo {
     color: rgb(1,33,154);
 }
 a.logo img {
-    width: 120px;
+    width: 80px;
 }
 .mobile-display {
     display: none;
@@ -49,11 +49,10 @@ nav ul {
     position: absolute;
     float: right;
     right: 300px;
-    margin-top: 75px;
+    margin-top: 65px;
 }
 nav li {
     float: left;
-    margin-top: 25px;
     margin-left: 10px;
 }
 nav li a {
@@ -76,7 +75,7 @@ nav li a.active, nav li a:hover {
     display: block;
     position: absolute;
     right: 310px;
-    top: 70px;
+    top: 40px;
     color: #6f6f6f;
 }
 .nav-contact a {    
